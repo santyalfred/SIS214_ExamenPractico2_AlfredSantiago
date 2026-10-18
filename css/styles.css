@@ -1,44 +1,87 @@
-
+/*  1. DISEÑO */
 :root {
-  --color_bg: #ffffff;
-  --color_bg_alt: #f4f4f4;
-  --color_bg_tarjeta: #ffffff;
-  --color_texto: #1a1a1a;
-  --color_texto_suave: #545454;
-  --color_borde: #e2e2e2;
+  /* Colores: tema claro */
+  --color_fondo: #f6f6f2;
+  --color_superficie: #ffffff;
+  --color_superficie_alt: #ecece5;
+  --color_texto: #14171c;
+  --color_texto_suave: #50566a;
+  --color_borde: #d8d8cf;
+  --color_primario: #d6001c;         
+  --color_primario_hover: #a80016;
+  --color_sobre_primario: #ffffff;
+  --color_secundario: #111111;        
+  --color_sobre_secundario: #ffffff;
+  --color_enlace: #bd0018;            
+  --color_resalte: #ff3b52;           
+  --color_cabecera: #111111;
+  --color_sobre_cabecera: #f3f3f0;
+  --color_foco: #0b57d0;
+  --color_exito: #17753a;
+  --color_error: #b3261e;
+  --color_halo: rgb(214 0 28 / 0.12);
+  --color_linea_campo: rgb(20 23 28 / 0.08);
+  --patron_marco: linear-gradient(115deg, #ffffff 0 30%, var(--color_primario) 30% 70%, #ffffff 70% 100%);
+  --sombra_suave: 0 1px 2px rgb(0 0 0 / 0.06), 0 6px 18px rgb(0 0 0 / 0.08);
+  --sombra_fuerte: 0 14px 34px rgb(0 0 0 / 0.22);
 
-  --color_primario: #d6001c;   
-  --color_primario_oscuro: #a40016;
-  --color_acento: #111111;     
+  /* Tipografía */
+  --fuente_base: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fuente_titulos: "Arial Black", "Segoe UI Black", system-ui, sans-serif;
+  --fuente_mono: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --tamano_base: 1rem;
+  --tamano_pequeno: 0.875rem;
+  --tamano_etiqueta: 0.75rem;
 
-  --fuente_titulos: Georgia, 'Times New Roman', serif;
-  --fuente_cuerpo: 'Segoe UI', Arial, Helvetica, sans-serif;
+  /* Unidades de espaciado */
+  --unidad_espaciado: 1rem;
+  --espacio_1: calc(var(--unidad_espaciado) * 0.25);
+  --espacio_2: calc(var(--unidad_espaciado) * 0.5);
+  --espacio_3: var(--unidad_espaciado);
+  --espacio_4: calc(var(--unidad_espaciado) * 1.5);
+  --espacio_5: calc(var(--unidad_espaciado) * 2);
+  --espacio_6: calc(var(--unidad_espaciado) * 3);
+  --espacio_7: calc(var(--unidad_espaciado) * 4.5);
 
-  --radio_borde: 8px;
-  --sombra_suave: 0 2px 6px rgba(0, 0, 0, 0.1);
-  --sombra_media: 0 4px 14px rgba(0, 0, 0, 0.16);
-  --color_error_bg: #fdecec;
+  /* Forma, layout y movimiento */
+  --radio: 0.75rem;
+  --radio_grande: 1.25rem;
+  --ancho_contenido: 72rem;
+  --margen_lateral: max(var(--espacio_3), calc((100% - var(--ancho_contenido)) / 2));
+  --transicion: 220ms ease;
 
-  --transicion_tema: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  color-scheme: light;
 }
 
-/* MODO OSCURO */
-html.tema_oscuro {
-  --color_bg: #0b1e3d;
-  --color_bg_alt: #142a4d;
-  --color_bg_tarjeta: #142a4d;
-  --color_texto: #f2f2f2;
-  --color_texto_suave: #c7d1e0;
-  --color_borde: #24406b;
+/* Colores: tema oscuro */
+:root[data-tema="oscuro"] {
+  --color_fondo: #071a35;
+  --color_superficie: #0f2a4f;
+  --color_superficie_alt: #0b2244;
+  --color_texto: #f1f4f9;
+  --color_texto_suave: #b9c6db;
+  --color_borde: #27457a;
+  --color_primario: #a50044;         
+  --color_primario_hover: #c20052;
+  --color_sobre_primario: #ffffff;
+  --color_secundario: #004d98;        
+  --color_sobre_secundario: #ffffff;
+  --color_enlace: #f2c315;            
+  --color_resalte: #edbb00;
+  --color_cabecera: #04122a;
+  --color_sobre_cabecera: #f1f4f9;
+  --color_foco: #ffd23f;
+  --color_exito: #5fdc8c;
+  --color_error: #ff8aa8;
+  --color_halo: rgb(165 0 68 / 0.45);
+  --color_linea_campo: rgb(241 244 249 / 0.07);
+  --patron_marco: repeating-linear-gradient(90deg, var(--color_secundario) 0 1.1rem, var(--color_primario) 1.1rem 2.2rem);
+  --sombra_suave: 0 1px 2px rgb(0 0 0 / 0.4), 0 6px 18px rgb(0 0 0 / 0.35);
+  --sombra_fuerte: 0 14px 34px rgb(0 0 0 / 0.6);
 
-  --color_primario: #a50044;   /* granate blaugrana */
-  --color_primario_oscuro: #7a0033;
-  --color_acento: #edbb00;     /* dorado blaugrana */
-
-  --sombra_suave: 0 2px 6px rgba(0, 0, 0, 0.45);
-  --sombra_media: 0 4px 16px rgba(0, 0, 0, 0.6);
-  --color_error_bg: #3a1420;
+  color-scheme: dark;
 }
+
 
 /*  Reset básico */
 * {
