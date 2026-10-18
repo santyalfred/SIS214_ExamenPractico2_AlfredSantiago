@@ -11,7 +11,7 @@ import { iniciar_filtro } from './modulos/filtro.js';
 import { iniciar_formulario } from './modulos/formulario.js';
 import { iniciar_github } from './modulos/github.js';
 
-const RUTA_DATOS = 'data/datos.json';
+const RUTA_DATOS = 'data/datos.JSON';
 
 /* Único texto fijo de la aplicación: si el JSON no carga, no hay de dónde leer mensajes. */
 const MENSAJE_FALLO_DATOS =
