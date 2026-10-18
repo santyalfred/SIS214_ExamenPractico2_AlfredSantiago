@@ -185,17 +185,111 @@
       </ul>
     </section>
 
+<!-- ===================== API REST con Fetch ===================== -->
+    <section id="github" aria-labelledby="titulo_github" aria-busy="true" data-estado="cargando">
+      <h2 id="titulo_github" data-texto="secciones.github.titulo"></h2>
+      <p class="nota_seccion" data-texto="secciones.github.intro"></p>
+
+      <article class="perfil_github" id="perfil_github" hidden></article>
+
+      <p class="estado_github" id="estado_github" role="status" aria-live="polite"></p>
+      <button class="boton boton_secundario" id="boton_reintentar" type="button"
+              data-texto="secciones.github.reintentar" hidden></button>
+
+      <ul class="rejilla rejilla_repos" id="lista_repos" role="list"></ul>
+    </section>
+
+<!-- ===================== CONTACTO ===================== -->
+    <section class="contacto" id="contacto" aria-labelledby="titulo_contacto">
+      <h2 id="titulo_contacto" data-texto="secciones.contacto.titulo"></h2>
+      <p class="nota_seccion" data-texto="secciones.contacto.intro"></p>
+
+      <form class="formulario" id="form_contacto" novalidate>
+        <fieldset>
+          <legend data-texto="formulario.legend"></legend>
+
+          <p class="campo">
+            <label for="nombre" data-texto="formulario.campos.nombre.etiqueta"></label>
+            <input type="text" id="nombre" name="nombre" data-campo
+                   minlength="3" maxlength="80" required autocomplete="name"
+                   aria-describedby="error_nombre"
+                   data-attr="placeholder:formulario.campos.nombre.placeholder">
+            <span class="campo_mensaje" id="error_nombre"></span>
+          </p>
+
+          <p class="campo">
+            <label for="correo" data-texto="formulario.campos.correo.etiqueta"></label>
+            <input type="email" id="correo" name="correo" data-campo
+                   required autocomplete="email"
+                   aria-describedby="error_correo"
+                   data-attr="placeholder:formulario.campos.correo.placeholder">
+            <span class="campo_mensaje" id="error_correo"></span>
+          </p>
+
+          <p class="campo">
+            <label for="telefono" data-texto="formulario.campos.telefono.etiqueta"></label>
+            <input type="tel" id="telefono" name="telefono" data-campo
+                   pattern="\+?[0-9]{7,15}" autocomplete="tel"
+                   aria-describedby="error_telefono"
+                   data-attr="placeholder:formulario.campos.telefono.placeholder">
+            <span class="campo_mensaje" id="error_telefono"></span>
+          </p>
+
+          <p class="campo">
+            <label for="motivo" data-texto="formulario.campos.motivo.etiqueta"></label>
+            <select id="motivo" name="motivo" data-campo required aria-describedby="error_motivo"></select>
+            <span class="campo_mensaje" id="error_motivo"></span>
+          </p>
+
+          <p class="campo">
+            <label for="mensaje" data-texto="formulario.campos.mensaje.etiqueta"></label>
+            <textarea id="mensaje" name="mensaje" data-campo rows="5"
+                      minlength="10" maxlength="500" required
+                      aria-describedby="error_mensaje contador_mensaje"
+                      data-attr="placeholder:formulario.campos.mensaje.placeholder"></textarea>
+            <span class="campo_mensaje" id="error_mensaje"></span>
+            <span class="campo_contador" id="contador_mensaje"></span>
+          </p>
+
+          <p class="campo campo_casilla">
+            <input type="checkbox" id="aceptacion" name="aceptacion" data-campo
+                   value="si" required aria-describedby="error_aceptacion">
+            <label for="aceptacion" data-texto="formulario.campos.aceptacion.etiqueta"></label>
+            <span class="campo_mensaje" id="error_aceptacion"></span>
+          </p>
+        </fieldset>
+
+        <p class="acciones_formulario">
+          <button class="boton boton_primario" type="submit" data-texto="formulario.botones.enviar"></button>
+          <button class="boton boton_secundario" type="reset" data-texto="formulario.botones.limpiar"></button>
+        </p>
+
+        <p class="estado_formulario" id="estado_formulario" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="contacto_lateral" data-attr="aria-label:secciones.contacto.datos_titulo">
+        <h3 data-texto="secciones.contacto.datos_titulo"></h3>
+        <address>
+          <dl id="datos_contacto"></dl>
+        </address>
+
+        <h3 data-texto="secciones.contacto.enlaces_titulo"></h3>
+        <ul class="enlaces_profesionales" id="lista_enlaces" role="list"></ul>
+      </aside>
+    </section>
 
 </main>
 
-<footer class="site_footer">
-  <p>Santiago Alfred Michovich — Ingeniería de Sistemas — Universidad Católica Boliviana (UCB)</p>
-  <p><a href="mailto:santiagoalfredmichovich@gmail.com">santiagoalfredmichovich@gmail.com</a> ·
-  <a href="tel:+59175226574">+591 75226574</a></p>
-  <p><small>Desarrollado con HTML5, CSS3 y JavaScript nativo.</small></p>
-</footer>
+<!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie_sitio">
+    <p data-texto="textos.pie.linea_principal"></p>
+    <address>
+      <dl id="datos_pie"></dl>
+    </address>
+    <p><small data-texto="textos.pie.tecnologias"></small></p>
+    <p><a href="#inicio_pagina" data-texto="textos.pie.volver_arriba"></a></p>
+  </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
 
