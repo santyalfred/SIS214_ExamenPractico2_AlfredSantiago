@@ -96,5 +96,5 @@ Todo el texto, las rutas de imágenes/audio/video, las habilidades, proyectos, i
 
 ## 9. Control de versiones y despliegue
 
-- **Convención de commits:** mensajes descriptivos en imperativo, atómicos y progresivos (`Agrega estructura semántica`, `Implementa módulo de tema con localStorage`, `Corrige desbordamiento horizontal en móvil`…).
+- **Convención de commits:** mensajes descriptivos en imperativo, atómicos y progresivos (`Agrega estructura semántica`, `Implementa módulo de tema con localStorage`, `Corrige desbordamiento horizontal en móvil`…)
 
