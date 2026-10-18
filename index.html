@@ -44,33 +44,38 @@
 
     <p class="aviso_global" id="aviso_global" role="alert" hidden></p>
 
-  <section id="inicio" aria-labelledby="inicio_titulo">
-    <h2 id="inicio-titulo">Presentación</h2>
+  <!-- ===================== PRESENTACIÓN ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="titulo_hero">
+      <hgroup class="hero_titulos">
+        <p class="etiqueta_superior" data-texto="persona.etiqueta_superior"></p>
+        <h1 id="titulo_hero" data-texto="persona.nombre"></h1>
+        <p class="hero_rol" data-texto="persona.rol"></p>
+      </hgroup>
 
-    <div class="inicio_grid">
-      <figure class="foto_perfil">
-        <img src="assets/imagenes/Personal.png" alt="Fotografía profesional de Santiago Alfred Michovich">
-        <figcaption>Santiago Alfred Michovich</figcaption>
+      <ul class="hero_acciones" id="lista_acciones" role="list"
+          data-attr="aria-label:textos.acciones_etiqueta"></ul>
+
+      <address class="hero_contacto" data-attr="aria-label:textos.contacto_etiqueta">
+        <dl id="datos_hero"></dl>
+      </address>
+
+      <figure class="hero_foto">
+        <img alt="" data-attr="src:persona.foto.src;alt:persona.foto.alt">
+        <figcaption data-texto="persona.foto.pie"></figcaption>
       </figure>
 
-    <div class="inicio_datos">
-        <address>
-          <p><strong>Ciudad:</strong> La Paz, Bolivia</p>
-          <p><strong>Correo electrónico:</strong>
-            <a href="mailto:santiagoalfredmichovich@gmail.com">santiagoalfredmichovich@gmail.com</a>
-          </p>
-          <p><strong>Teléfono/Celular:</strong>
-            <a href="tel:+59175226574">+591 75226574</a>
-          </p>
-        </address>
+      <aside class="hero_lateral" data-attr="aria-label:textos.hero_lateral_etiqueta">
+        <blockquote>
+          <p data-texto="persona.frase"></p>
+        </blockquote>
+        <ul class="estadisticas" id="lista_estadisticas" role="list"
+            data-attr="aria-label:textos.estadisticas.etiqueta"></ul>
+      </aside>
+    </section>
 
-    <blockquote>
-      <p>"Mientras tengas una gran predisposición, comunicación, compañerismo y empatía,
-      ten por seguro que nunca caminarás solo."</p>
-    </blockquote>
-  </div>
-</div>
-</section>
+    <aside class="marquesina" aria-hidden="true">
+      <ul id="lista_marquesina"></ul>
+    </aside>
 
 
   <section id="perfil" aria-labelledby="perfil-titulo">
