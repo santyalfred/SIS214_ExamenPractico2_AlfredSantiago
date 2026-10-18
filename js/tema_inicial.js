@@ -1,6 +1,6 @@
 /* =============================================================================
    tema_inicial.js — Lee el tema guardado y lo aplica antes de que la página se dibuje, para que no parpadee en blanco si usas modo oscuro. 
-   No depende de ningún otro archivo y la clave debe coincidir con CLAVE_PREFERENCIAS de js/modulos/almacenamiento.js.
+   No depende de ningún otro archivo y la clave debe coincidir con clave_preferencias de js/modulos/almacenamiento.js.
    ============================================================================= */
 (() => {
   const CLAVE_PREFERENCIAS = 'cv_santiago_preferencias';
