@@ -1,0 +1,322 @@
+{
+  "meta": {
+    "titulo": "Santiago Alfred Michovich | Hoja de vida — Ingeniería de Sistemas",
+    "descripcion": "Santiago Alfred Michovich, estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana (UCB)."
+  },
+
+  "persona": {
+    "nombre": "Santiago Alfred Michovich",
+    "etiqueta_superior": "Ingeniería de Sistemas · UCB",
+    "rol": "Estudiante de Ingeniería de Sistemas | La Paz, Bolivia",
+    "frase": "Mientras tengas una gran predisposición, comunicación, compañerismo y empatía, ten por seguro que nunca caminarás solo.",
+    "foto": {
+      "src": "assets/imagenes/Personal.png",
+      "alt": "Fotografía profesional de Santiago Alfred Michovich",
+      "pie": "Santiago Alfred Michovich"
+    },
+    "acciones": [
+      { "etiqueta": "Ver portafolio", "href": "#explorar", "tipo": "primario" },
+      { "etiqueta": "Escríbeme", "href": "#contacto", "tipo": "secundario" }
+    ],
+    "contactos": [
+      { "etiqueta": "Ciudad", "valor": "La Paz, Bolivia" },
+      { "etiqueta": "Correo electrónico", "valor": "santiagoalfredmichovich@gmail.com", "href": "mailto:santiagoalfredmichovich@gmail.com" },
+      { "etiqueta": "Teléfono/Celular", "valor": "+591 75226574", "href": "tel:+59175226574" }
+    ],
+    "enlaces": [
+      { "etiqueta": "GitHub", "detalle": "santyalfred", "href": "https://github.com/santyalfred" }
+    ]
+  },
+
+  "github": {
+    "usuario": "santyalfred",
+    "max_repos": 6,
+    "tiempo_maximo_ms": 10000
+  },
+
+  "navegacion": [
+    { "id": "perfil", "etiqueta": "Perfil" },
+    { "id": "formacion", "etiqueta": "Formación" },
+    { "id": "experiencia", "etiqueta": "Experiencia" },
+    { "id": "explorar", "etiqueta": "Portafolio" },
+    { "id": "multimedia", "etiqueta": "Multimedia" },
+    { "id": "github", "etiqueta": "GitHub" },
+    { "id": "contacto", "etiqueta": "Contacto" }
+  ],
+
+  "textos": {
+    "saltar_contenido": "Saltar al contenido principal",
+    "navegacion_etiqueta": "Navegación principal",
+    "menu_etiqueta": "Menú de navegación",
+    "acciones_etiqueta": "Accesos rápidos",
+    "contacto_etiqueta": "Datos de contacto",
+    "hero_lateral_etiqueta": "Frase personal y resumen del portafolio",
+    "tema": {
+      "boton": "Modo oscuro",
+      "icono": "🌙"
+    },
+    "estadisticas": {
+      "etiqueta": "Resumen del portafolio",
+      "proyectos": "Proyectos",
+      "habilidades": "Habilidades",
+      "certificaciones": "Certificaciones",
+      "idiomas": "Idiomas"
+    },
+    "pie": {
+      "linea_principal": "Santiago Alfred Michovich — Ingeniería de Sistemas — Universidad Católica Boliviana (UCB)",
+      "tecnologias": "Desarrollado con HTML5, CSS3 y JavaScript ES6+, sin frameworks.",
+      "volver_arriba": "Volver arriba ↑"
+    }
+  },
+
+  "secciones": {
+    "perfil": {
+      "titulo": "Perfil profesional",
+      "fortalezas": "Principales fortalezas",
+      "objetivo": "Objetivo profesional"
+    },
+    "formacion": {
+      "titulo": "Formación académica"
+    },
+    "experiencia": {
+      "titulo": "Experiencia y proyectos relevantes",
+      "nota": "Aún no cuento con experiencia laboral formal. Las fichas siguientes corresponden a proyectos universitarios desarrollados durante la carrera.",
+      "descripcion": "Descripción",
+      "logro": "Principal logro"
+    },
+    "explorar": {
+      "titulo": "Explora mi portafolio",
+      "etiqueta": "Buscar proyectos, habilidades o certificaciones",
+      "placeholder": "Ej.: Java, damas, primeros auxilios…",
+      "limpiar": "Limpiar búsqueda",
+      "estado": {
+        "todos": "Mostrando todo el portafolio: {n} elementos.",
+        "uno": "1 resultado para «{q}».",
+        "otros": "{n} resultados para «{q}».",
+        "ninguno": "Sin resultados para «{q}». Prueba con otra palabra."
+      }
+    },
+    "proyectos": {
+      "titulo": "Proyectos destacados",
+      "vacio": "Ningún proyecto coincide con la búsqueda.",
+      "tecnologias": "Tecnologías",
+      "rol": "Rol",
+      "resultado": "Resultado"
+    },
+    "habilidades": {
+      "titulo": "Habilidades técnicas",
+      "vacio": "Ninguna habilidad coincide con la búsqueda.",
+      "nivel_aria": "Nivel de {nombre}: {nivel} de 10"
+    },
+    "certificaciones": {
+      "titulo": "Certificaciones y cursos",
+      "vacio": "Ninguna certificación coincide con la búsqueda."
+    },
+    "idiomas": {
+      "titulo": "Idiomas",
+      "caption": "Nivel autoevaluado por destreza (escala 0-10)",
+      "region_etiqueta": "Tabla de idiomas y niveles",
+      "columnas": ["Idioma", "Lectura", "Escritura", "Conversación"],
+      "nivel_aria": "{idioma}, {destreza}: {nivel} de 10"
+    },
+    "multimedia": {
+      "titulo": "Portafolio multimedia",
+      "sin_audio": "Tu navegador no soporta la reproducción de audio HTML5.",
+      "sin_video": "Tu navegador no soporta la reproducción de video HTML5."
+    },
+    "github": {
+      "titulo": "Actividad en GitHub",
+      "intro": "Datos en vivo obtenidos desde la API pública de GitHub.",
+      "cargando": "Consultando la API de GitHub…",
+      "exito": "Se cargaron {n} repositorios recientes de @{usuario}.",
+      "sin_repos": "Este usuario aún no tiene repositorios públicos.",
+      "sin_descripcion": "Sin descripción.",
+      "reintentar": "Reintentar",
+      "avatar_alt": "Foto de perfil de @{usuario} en GitHub",
+      "etiquetas": {
+        "repos": "Repositorios públicos",
+        "seguidores": "Seguidores",
+        "ver_perfil": "Ver perfil en GitHub",
+        "lenguaje": "Lenguaje",
+        "estrellas": "Estrellas",
+        "actualizado": "Actualizado"
+      },
+      "errores": {
+        "e400": "La solicitud no es válida (400 Bad Request).",
+        "e403": "GitHub limitó las consultas (403). Intenta de nuevo en unos minutos.",
+        "e404": "No se encontró el usuario o el recurso (404 Not Found).",
+        "e500": "GitHub tuvo un problema interno (500). Intenta más tarde.",
+        "sin_conexion": "No hay conexión con GitHub. Revisa tu internet.",
+        "tiempo_agotado": "GitHub tardó demasiado en responder.",
+        "generico": "Ocurrió un error inesperado (código {estado})."
+      }
+    },
+    "contacto": {
+      "titulo": "Contacto",
+      "intro": "Completa el formulario y me pondré en contacto a la brevedad.",
+      "datos_titulo": "Datos de contacto",
+      "enlaces_titulo": "Enlaces profesionales"
+    }
+  },
+
+  "perfil": {
+    "parrafos": [
+      "Tengo **19 años**, mido 1.85 m y me caracterizo por mantener muy buena relación con las personas de mi entorno. Cuento con un fuerte sentido de análisis de situaciones, evaluación de problemas y su debida resolución. Me guío por valores como la ==empatía==, la solidaridad, el compañerismo, la lealtad y el trabajo en equipo, y estoy comprometido siempre que se me necesita.",
+      "Soy también un gran amante del deporte, en especial del **fútbol**; gracias a mi relación con este deporte entiendo, en la práctica, lo que significa *trabajar en equipo por un bien común*.",
+      "Actualmente curso el **segundo año de Ingeniería de Sistemas** en la Universidad Católica Boliviana (UCB), desde el primer semestre de 2025, con proyección de finalizar la carrera en 2029. Busco mejorar mis habilidades técnicas y blandas para ingresar al mundo laboral persiguiendo objetivos que aporten a la sociedad actual."
+    ],
+    "fortalezas": ["Responsabilidad", "Trabajo en equipo", "Predisposición"],
+    "objetivo": "Mi meta a futuro es crear un **sistema de bases de datos propio** que ayude a mejorar el rendimiento de deportistas de alto nivel en el fútbol profesional, detectando fallas en jugadores, planes tácticos y decisiones dentro de los partidos, para corregirlas y así alcanzar la victoria en todos los campeonatos posibles."
+  },
+
+  "formacion": [
+    {
+      "titulo": "Ingeniería de Sistemas",
+      "institucion": "Universidad Católica Boliviana “San Pablo” (UCB)",
+      "desde": { "iso": "2025-01", "texto": "2025" },
+      "hasta": { "iso": null, "texto": "Actualidad" },
+      "detalles": [
+        { "etiqueta": "Estado actual", "valor": "En curso" },
+        { "etiqueta": "Finalización estimada", "valor": "2029", "iso": "2029" }
+      ]
+    },
+    {
+      "titulo": "Bachillerato",
+      "institucion": "Colegio San Ignacio de Loyola",
+      "desde": { "iso": "2013", "texto": "2013" },
+      "hasta": { "iso": "2024", "texto": "2024" },
+      "detalles": [
+        { "etiqueta": "Grado obtenido", "valor": "Diploma de Bachiller" }
+      ]
+    }
+  ],
+
+  "proyectos": [
+    {
+      "id": "concesionaria",
+      "nombre": "Sistema de Concesionaria de Autos",
+      "resumen": "Aplicación de escritorio para la compra y venta de vehículos, con gestión de vendedores, clientes y autos nuevos.",
+      "tecnologias": ["Java"],
+      "rol": "Desarrollador",
+      "resultado": "Sistema funcional que administra todo el ciclo de compra-venta.",
+      "institucion": "Proyecto académico — Universidad Católica Boliviana (UCB)",
+      "periodo": { "iso": "2026-01", "texto": "1-2026", "etiqueta": "3.er semestre" },
+      "descripcion_experiencia": "Diseño y programación en **Java** de un sistema de compra y venta de autos, con registro de vendedores, clientes y autos nuevos.",
+      "logro": "Sistema funcional capaz de gestionar el ciclo completo de compra-venta entre los distintos actores del negocio.",
+      "imagen": {
+        "src": "assets/imagenes/Ejemplo.png",
+        "alt": "Captura de pantalla del sistema de concesionaria de autos",
+        "pie": "Captura del sistema de concesionaria de autos (Java)."
+      }
+    },
+    {
+      "id": "damas",
+      "nombre": "Juego de Damas",
+      "resumen": "Implementación de un juego de damas de consola con reglas y turnos básicos.",
+      "tecnologias": ["C++"],
+      "rol": "Desarrollador",
+      "resultado": "Juego funcional con lógica de movimientos y turnos.",
+      "institucion": "Proyecto académico — Universidad Católica Boliviana (UCB)",
+      "periodo": { "iso": "2025-08", "texto": "2-2025", "etiqueta": "2.º semestre" },
+      "descripcion_experiencia": "Implementación en **C++** de un juego de damas con lógica básica de movimientos y turnos.",
+      "logro": "Tablero y reglas de juego funcionando de extremo a extremo sin librerías externas.",
+      "imagen": {
+        "src": "assets/imagenes/Damas.png",
+        "alt": "Captura de pantalla del juego de damas",
+        "pie": "Captura del juego de damas (C++)."
+      }
+    }
+  ],
+
+  "habilidades": {
+    "categorias": [
+      { "id": "lenguajes", "titulo": "Lenguajes y tecnologías", "marquesina": true },
+      { "id": "herramientas", "titulo": "Herramientas de desarrollo", "marquesina": true },
+      { "id": "profesionales", "titulo": "Habilidades profesionales", "marquesina": false }
+    ],
+    "items": [
+      { "nombre": "Python", "categoria": "lenguajes", "nivel": 8 },
+      { "nombre": "C++", "categoria": "lenguajes", "nivel": 9 },
+      { "nombre": "Java", "categoria": "lenguajes", "nivel": 8 },
+      { "nombre": "HTML5", "categoria": "lenguajes", "nivel": 4, "nota": "en aprendizaje" },
+      { "nombre": "SQL", "categoria": "lenguajes", "nivel": 4 },
+      { "nombre": "Code::Blocks", "categoria": "herramientas" },
+      { "nombre": "Eclipse", "categoria": "herramientas" },
+      { "nombre": "OnlineGDB", "categoria": "herramientas" },
+      { "nombre": "Visual Studio Code", "categoria": "herramientas" },
+      { "nombre": "Trabajo en equipo", "categoria": "profesionales" },
+      { "nombre": "Análisis de situaciones", "categoria": "profesionales" },
+      { "nombre": "Comunicación limpia y segura", "categoria": "profesionales" },
+      { "nombre": "Organización de personas en grupos de trabajo", "categoria": "profesionales" }
+    ]
+  },
+
+  "certificaciones": [
+    {
+      "nombre": "Curso de Primeros Auxilios Básicos",
+      "tipo": "Curso",
+      "fecha": { "iso": "2023", "texto": "2023" }
+    }
+  ],
+
+  "idiomas": [
+    { "idioma": "Español (nativo)", "lectura": 10, "escritura": 9, "conversacion": 8 },
+    { "idioma": "Inglés", "lectura": 9.5, "escritura": 8.5, "conversacion": 6 },
+    { "idioma": "Italiano", "lectura": 6, "escritura": 5, "conversacion": 2 }
+  ],
+
+  "multimedia": {
+    "imagen": {
+      "src": "assets/imagenes/Concesionaria.png",
+      "alt": "Captura de pantalla del sistema de concesionaria de autos desarrollado en Java",
+      "pie": "Figura 1: Captura del sistema de concesionaria de autos (Java)."
+    },
+    "audio": {
+      "titulo": "Audio de presentación profesional",
+      "src": "assets/audios/Santy1.mp3",
+      "tipo": "audio/mpeg"
+    },
+    "video": {
+      "titulo": "Video del proyecto Concesionaria de autos",
+      "src": "assets/videos/Concesionaria1.mp4",
+      "tipo": "video/mp4"
+    }
+  },
+
+  "formulario": {
+    "legend": "Datos de contacto",
+    "seleccion_placeholder": "-- Selecciona una opción --",
+    "campos": {
+      "nombre": { "etiqueta": "Nombre completo (*)", "placeholder": "Tu nombre y apellido" },
+      "correo": { "etiqueta": "Correo electrónico (*)", "placeholder": "correo@ejemplo.com" },
+      "telefono": { "etiqueta": "Teléfono (opcional)", "placeholder": "+591 70000000" },
+      "motivo": { "etiqueta": "Motivo de contacto (*)" },
+      "mensaje": { "etiqueta": "Mensaje (*)", "placeholder": "Cuéntame en qué puedo ayudarte…" },
+      "aceptacion": { "etiqueta": "Acepto que mis datos sean utilizados únicamente para fines de contacto (*)." }
+    },
+    "motivos": [
+      { "valor": "oferta-laboral", "etiqueta": "Oferta laboral / práctica" },
+      { "valor": "proyecto", "etiqueta": "Colaboración en proyecto" },
+      { "valor": "consulta-academica", "etiqueta": "Consulta académica" },
+      { "valor": "otro", "etiqueta": "Otro" }
+    ],
+    "botones": {
+      "enviar": "Enviar mensaje",
+      "limpiar": "Limpiar formulario"
+    },
+    "validacion": {
+      "obligatorio": "Este campo es obligatorio.",
+      "marcar": "Debes aceptar para poder enviar el mensaje.",
+      "correo_formato": "Ingresa un correo válido, por ejemplo nombre@dominio.com.",
+      "telefono_formato": "Ingresa de 7 a 15 dígitos; puede iniciar con +.",
+      "corto": "Escribe al menos {min} caracteres.",
+      "largo": "Escribe como máximo {max} caracteres.",
+      "valido": "Se ve bien"
+    },
+    "estados": {
+      "revisar": "Revisa los campos marcados antes de enviar.",
+      "enviando": "Enviando tu mensaje…",
+      "exito": "¡Gracias, {nombre}! Tu mensaje fue enviado correctamente."
+    }
+  }
+}
