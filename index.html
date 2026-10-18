@@ -14,37 +14,35 @@
 </head>
 <body>
 
-<a class="skip_link" href="#contenido_principal">Saltar al contenido principal</a>
+<a class="enlace_salto" href="#contenido_principal" data-texto="textos.saltar_contenido"></a>
 
-<header class="site_header">
-  <div class="header_inner">
-    <div class="header_texto">
-      <h1>Santiago Alfred Michovich</h1>
-      <p class="rol">Estudiante de Ingeniería de Sistemas | La Paz, Bolivia</p>
-    </div>
+ <!-- ===================== CABECERA Y NAVEGACIÓN ===================== -->
+  <header class="cabecera_sitio" id="inicio_pagina">
+    <a class="marca" href="#inicio">
+      <span class="marca_sigla" id="marca_sigla"></span>
+      <span class="marca_nombre" id="marca_nombre"></span>
+    </a>
 
-    <button id="theme_toggle" type="button" class="theme_toggle_btn" aria-pressed="false">
-      <span id="theme_toggle_icon" aria-hidden="true">🌙</span>
-      <span id="theme_toggle_text">Modo oscuro</span>
+    <button class="boton_menu" id="boton_menu" type="button"
+            aria-expanded="false" aria-controls="navegacion_principal"
+            data-attr="aria-label:textos.menu_etiqueta">
+      <span class="hamburguesa" aria-hidden="true"></span>
     </button>
-  </div>
 
-  <nav class="nav_principal" aria-label="Navegación principal">
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#perfil">Perfil</a></li>
-      <li><a href="#formacion">Formación</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#idiomas">Idiomas</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#enlaces">Enlaces</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="navegacion" id="navegacion_principal"
+         data-attr="aria-label:textos.navegacion_etiqueta">
+      <ul id="lista_navegacion" role="list"></ul>
+    </nav>
 
-<main id="contenido_principal">
+    <button class="boton_tema" id="boton_tema" type="button" aria-pressed="false">
+      <span id="icono_tema" aria-hidden="true"></span>
+      <span class="boton_tema_texto" data-texto="textos.tema.boton"></span>
+    </button>
+  </header>
+
+  <main id="contenido_principal">
+
+    <p class="aviso_global" id="aviso_global" role="alert" hidden></p>
 
   <section id="inicio" aria-labelledby="inicio_titulo">
     <h2 id="inicio-titulo">Presentación</h2>
